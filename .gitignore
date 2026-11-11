@@ -32,6 +32,16 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+# allow .env.example to be uploaded, keep .env secret
+.env
+!.env.example
+
+# ignore local AI IDE folders
+.agents/
+.claude/
+.cursor/
+.devin/
+AGENTS.md
 
 # vercel
 .vercel
